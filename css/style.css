@@ -436,22 +436,21 @@ button:hover {
     .questions {
         width: 90%; 
     }
-
     .faq-grid {
         width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .faq-card {
         width: 100%;
-        max-width: 100%;
+        padding: 15px;
     }
 
     .faq-question {
-        width: 100%;
         font-size: 14px;
-        word-wrap: break-word;
+        white-space: normal;
+        word-break: break-word;
     }
 
     .faq-answer {
