@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking Confirmation - EuroStay</title>
+        <link rel="stylesheet" href="../css/booking_report.css">
+        <link rel="icon" type="image/png" href="../images/E.png">
+    </head>
+
+    <body>
+        <header>
+            <div class="head">
+                <h1>EuroStay</h1>
+
+                <div class="buttons">
+                    <a href="../pages/template.html">Home</a>
+                    <a href="../pages/compare.html">Compare</a>
+                    <a href="../pages/favourite.html">Favourite</a>
+                    <a href="../pages/account.html">Account</a>
+                    <button class="reglog" onclick="location.href='register.html'">Register</button>
+                    <button class="reglog" onclick="location.href='logIN.html'">Log In</button>
+                </div>
+            </div>
+
+            <div class="text">
+                <h1>Booking Confirmation</h1>
+            </div>
+        </header>
+
+        <div class="main">
+            
+
+            <div class="report-container">
+
+              
+                <div class="status-banner success">
+                    <h2>Booking Confirmed</h2>
+                    <p>Your reservation has been successfully booked. A confirmation email has been sent.</p>
+                </div>
+
+                
+                <div class="booking-reference-box">
+                    <p>Booking Reference</p>
+                    <h3 id="bookingReference">REFERENCE</h3>
+                    <p class="note">Please keep this reference for check-in and inquiries</p>
+                </div>
+
+              
+                <div class="report-section">
+                    <h2>Guest Information</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label>Guest Name</label>
+                            <p id="guestName">-</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Email</label>
+                            <p id="guestEmail">-</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Phone</label>
+                            <p id="guestPhone">-</p>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="report-section">
+                    <h2>Hotel Details</h2>
+                    <div class="hotel-card">
+                        <img id="hotelImage" src="../images/smile.webp" alt="Hotel Image" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 id="hotelName">Hotel Name</h3>
+                            <p><strong>Location:</strong> <span id="hotelLocation">CITY , COUNTRY</span></p>
+                            <p><strong>Address:</strong> <span id="hotelAddress">ADDRESS</span></p>
+                            <p><strong>Phone:</strong> <span id="hotelPhone">PHONE HOTEL</span></p>
+                            <p><strong>Rating:</strong> <span id="hotelRating">STARS</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="report-section">
+                    <h2>Room Details</h2>
+                    <div class="room-card">
+                        <img id="roomImage" src="../images/smile.webp" alt="Room Image" class="room-image">
+                        <div class="room-info">
+                            <h3 id="roomType">Room Type</h3>
+                            <p><strong>Room Price:</strong> <span id="roomPrice">€ PRICE</span> / night</p>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <div class="report-section">
+                    <h2>Booking Dates</h2>
+                    <div class="dates-grid">
+                        <div class="date-item">
+                            <label>Check-in Date</label>
+                            <p id="checkInDate">DD-MM-YYYY</p>
+                            <p class="time"> TIME FOR CHECK IN</p>
+                        </div>
+                        <div class="date-item">
+                            <label>Check-out Date</label>
+                            <p id="checkOutDate">DD-MM-YYYY</p>
+                            <p class="time">TIME FOR CHECK OUT</p>
+                        </div>
+                        <div class="date-item">
+                            <label>Number of Nights</label>
+                            <p id="numberOfNights">NIGHTS</p>
+                        </div>
+                    </div>
+                </div>
+
+        
+                <div class="report-section price-summary">
+                    <h2>Price Summary</h2>
+                    <div class="price-grid">
+                        <div class="price-line">
+                            <span>Room Rate per Night:</span>
+                            <span id="pricePerNight">€ PRICE</span>
+                        </div>
+                        <div class="price-line">
+                            <span>Number of Nights:</span>
+                            <span id="numberOfNightsPricing">NIGHTS</span>
+                        </div>
+                        <div class="price-line border-top">
+                            <span><strong>Total Price:</strong></span>
+                            <span id="totalPrice" class="total"><strong>€ PRICE</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                                     
+                    <div class="report-section">  
+                    <h2>Payment Information</h2>
+                    <div class="payment-status">
+                        <div class="status-item">
+                            <label>Payment Status</label>
+                            <p id="paymentStatus" class="status-badge completed">STATUS PAYMENT</p>
+                        </div>
+                        <div class="status-item">
+                            <label>Booking Status</label>
+                            <p id="bookingStatus" class="status-badge confirmed">STATUS BOOKING</p>
+                        </div>
+                        <div class="status-item">
+                            <label>Transaction ID</label>
+                            <p id="transactionId">TXN-XXXXX</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="report-section important-info">
+                    <h2>Important Information</h2>
+                    <ul>
+                        <li>Please arrive at least 30 minutes before check-in time</li>
+                        <li>Valid ID is required at check-in</li>
+                        <li>Check hotel cancellation policy for changes</li>
+                        <li>This is a confirmed reservation</li>
+                        <li>A confirmation email with full details has been sent to your email</li>
+                    </ul>
+                </div>
+
+              
+                <div class="action-buttons">
+                    <button class="download-pdf">Download PDF</button>
+                    <button class="btn-secondary" onclick="location.href='my_bookings.html'">View All Bookings</button>
+                    <button class="btn-secondary" onclick="location.href='template.html'">Continue Searching</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <a href="../pages/template.html">Home</a>
+                    <a href="../pages/compare.html">Compare</a>
+                    <a href="../pages/favourite.html">Favourite</a>
+                    <a href="../pages/account.html">Account</a>
+                </div>
+
+                <div class="footer-center">
+                    <h1>EuroStay</h1>
+                </div>
+
+                <div class="footer-right">
+                    <div class="icons">
+                        <a href="#"><img src="../images/instagram.png" alt="Instagram" class="icon"></a>
+                        <a href="#"><img src="../images/whatsapp.png" alt="Whatsapp" class="icon"></a>
+                    </div>
+                    <p>email</p>
+                    <p>+60</p>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/eurostay.js"></script>
+
+   
+    </body>
+</html>
+

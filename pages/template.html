@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroStay</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../images/E.png">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="head">
+
+            <h1>EuroStay</h1>
+
+            <div class="buttons">
+
+                <a href="../pages/template.html">Home</a>
+                <a href="../pages/compare.html">Compare</a>
+                <a href="../pages/favourite.html">Favourite</a>
+                <a href="../pages/account.html">Account</a>
+                <button class="reglog" onclick="location.href='register.html'">Register</button>
+                <button  class="reglog" onclick="location.href='logIN.html'"> Login</button>
+
+            </div>
+        </div>
+
+        <div class="search">
+             <select>
+                <option>Country</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>Greece</option>
+                <option>Italy</option>
+                <option>Netherlands</option>
+                <option>Poland</option>
+                <option>Spain</option>
+                <option>Turkey</option>
+            </select>
+                
+                <input type="date">
+                <input type="date">
+                <button>Search</button>
+        </div>
+
+    </header>
+
+    <div class="main">
+
+        <h1>The best offers</h1>
+
+       <div class="offers">
+
+    <div class="card">
+
+        <img src="../images/france/B&B_HOTEL/B&B_building.png" alt="B&B Hotel Paris">
+        <h2>B&B Hotel Paris</h2>
+        <p>A simple and comfortable hotel in Paris with a clean room and good location.</p>
+        <button onclick="bookHotel(1)">Book</button>
+    
+    </div>
+
+    <div class="card">
+        
+        <img src="../images/france/Hotel_Angelic_(Lourdes)/building.avif" alt="Hotel Angelic">
+        <h2>Hotel Angelic</h2>
+        <p>A beautiful hotel with comfortable rooms, nice design, and good service for guests.</p>
+        <button onclick="bookHotel(2)">Book</button>
+    
+    </div>
+
+    </div>
+        </div>
+
+        <div class="questions">
+            <h1>Questions and Answers</h1>
+
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <button class="faq-question">How can I book a hotel room?</button>
+                    <div class="faq-answer">
+                        <p>You can search for hotels, choose your preferred room category, check availability, and complete the booking through the website.</p>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <button class="faq-question">Can I add hotels to my favourites?</button>
+                    <div class="faq-answer">
+                        <p>Yes, you can save hotels to your favourites and view them later on the Favourite page.</p>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <button class="faq-question">How do I know if a room is available?</button>
+                    <div class="faq-answer">
+                        <p>Each room category shows the number of available rooms directly on the hotel details page.</p>
+                    </div>
+                </div>
+                <div class="faq-card">
+                    <button class="faq-question">Can I cancel or manage my booking?</button>
+                    <div class="faq-answer">
+                        <p>You can view your bookings on the My Bookings page and manage them if this option is available.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer id="footer">
+        <div class="footer-container">
+
+           
+            <div class="footer-left">
+                <a href="../pages/template.html">Home</a>
+                <a href="../pages/compare.html">Compare</a>
+                <a href="../pages/favourite.html">Favourite</a>
+                <a href="../pages/account.html">Account</a>
+            </div>
+
+            
+            <div class="footer-center">
+                <h1>EuroStay</h1>
+            </div>
+
+       
+            <div class="footer-right">
+                <div class="icons">
+                    <a href="#"><img src="../images/instagram.png" alt="Instagram" class="icon"></a>
+                    <a href="#"><img src="../images/whatsapp.png" alt="Whatsapp" class="icon"></a>
+                </div>
+                <p>email.com</p>
+                <p>+60</p>
+            </div>
+
+        </div>
+    </footer>
+    <script src="../js/eurostay.js"></script>
+</body>
+</html>

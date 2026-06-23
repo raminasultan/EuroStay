@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eurostay</title>
+        <link rel="stylesheet" href="../../css/hotel_page.css">
+        <link rel="icon" type="image/png" href="../../images/E.png">
+
+    </head>
+    <body>
+
+        <header class="header">
+            <img src="../../images/france/B&B_HOTEL/B&B_building.png">
+
+            <div class="head">
+                <h1>EuroStay</h1>
+                
+
+                <div class="buttons">
+                    <a href="../../pages/template.html">Home</a>
+                    <a href="../../pages/compare.html">Compare</a>
+                    <a href="../../pages/favourite.html">Favourite</a>
+                    <a href="../../pages/account.html">Account</a>
+                    <button class="reglog" onclick="location.href='../../pages/register.html'">Register</button>
+                    <button class="reglog" onclick="location.href='../../pages/logIN.html'">Sign In</button>
+                </div>
+            </div>
+
+            <div class="hotel_info">
+                <h2>B&B HOTEL<br>Mont-de-Marsan</h2>
+                <p class="stars">★★ 2-star hotel</p>
+                <p class="location"> France, Saint-Avit</p>
+                <button class="book-now" onclick="bookHotel(1)">Book Now</button>
+            </div>
+
+            
+        </header>
+
+        <div class="main">
+    
+            <div class="search-box">
+
+                <div class="search-card">
+
+                    <div class="search-item">
+                        <p>Address</p>
+                        <h4>111 Allée Mamoura<br>France</h4>
+                    </div>
+
+               
+
+
+                </div>
+
+            </div>
+
+            <div class="hotel-info">
+
+                <div class="info-left">
+                    <h2>B&B HOTEL Mont-de-Marsan</h2>
+
+                    <p> 111 Allée Mamoura</p>
+                    <p>+33 298 337 529</p>
+
+                    <div class="time-row">
+                        <p>Check-in: 14:00</p>
+                        <p>Check-out: 12:00</p>
+                    </div>
+                </div>
+
+                <div class="info-right">
+                    <h2>Description</h2>
+
+                    <p>Simple 2-star hotel with parking and 24h check-in.</p>
+                    <p>Free Wi-Fi, private bathroom, AC.</p>
+                </div>
+
+            </div>
+
+
+    
+            <div class="gallery-section">
+
+                <h2>Photo Gallery</h2>
+
+                <div class="gallery">
+
+                    <div class="photo"><img src="../../images/france/B&B_HOTEL/Picture1.jpg" alt="pic 1"></div>
+                    <div class="photo"><img src="../../images/france/B&B_HOTEL/kitchen.jpg" alt="pic 1"></div>
+                    <div class="photo"><img src="../../images/france/B&B_HOTEL/kitchen(2).jpg" alt="pic 1"></div>
+                    <div class="photo"><img src="../../images/france/B&B_HOTEL/registration.jpg" alt="pic 1"></div>
+                    <div class="photo"><img src="../../images/france/B&B_HOTEL/B&B_toilet.png" alt="pic 1"></div>
+                    <div class="photo"><img src="../../images/france/B&B_HOTEL/kitchen(3).png" alt="pic 1"></div>
+
+                </div>
+
+            </div>
+
+
+    
+            <div class="rooms-section">
+
+                <h2>Room Types</h2>
+
+                <div class="rooms">
+
+                
+                    
+                    <div class="room-card">
+
+                        <div class="room-photo"><img src="../../images/france/B&B_HOTEL/B&B_twin_sharing.png"></div>
+
+                        <div class="room-text">
+                            <h3>Twin Room</h3>
+                            <p>2 single beds</p>
+                            <p>Max 2 guests</p>
+                            <h4> Adult: €38 (room only)<br>€54.01(room + breakfast)</h4>
+                            <h4>Adult and child: €38.01 (room only) <br> €64.01(room + breakfast) </h4>
+
+                            <div class="room-buttons">
+                                <button class="yellow-btn" onclick="bookHotel(1)">Book</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="room-card">
+
+                        <div class="room-photo"><img src="../../images/france/B&B_HOTEL/B&B_double_room(2).png"></div>
+
+                        <div class="room-text">
+                            <h3>Double Room</h3>
+                            <p>1 big </p>
+                            <p>Max 2 guests</p>
+                            <h4>Adult: €50.01 ( room only ) <br> €67.01 (room + breakfast)</h4>
+                            <h4>Adult and child: €50.01 ( room only ) <br> €74.01 (room + breakfast)</h4>
+
+                            <div class="room-buttons">
+                                <button class="yellow-btn" onclick="bookHotel(1)">Book</button>
+                            </div>
+
+                        </div>   
+                    
+                    </div>
+
+
+            
+                    <div class="room-card">
+
+                        <div class="room-photo"><img src="../../images/france/B&B_HOTEL/B&B_double_room(1).png"></div>
+
+                        <div class="room-text">
+                            <h3>Double Room</h3>
+                            <p>1 big bed</p>
+                            <p>Max 2 guests</p>
+                            <h4>Adult : €50.01 ( room only ) <br> €67.01 (room + breakfast)</h4>
+                            <h4>Adult and child: €50.01 ( room only ) <br> 74.01 (room + breakfast)/h4>
+
+                            <div class="room-buttons">
+                                <button class="yellow-btn" onclick="bookHotel(1)">Book</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+            
+                    <div class="room-card">
+
+                        <div class="room-photo"><img src="../../images/france/B&B_HOTEL/B&B_three_per_room.png"></div>
+
+                        <div class="room-text">
+                            <h3>4 Person Room</h3>
+                            <p>1 big + 2 single</p>
+                            <p>Max 4 guests</p>
+                            <h4>Adult: €54.01 ( room only ) <br> €71.01 (room + breakfast)</h4>
+                            <h4>Adult and child: €54.01 ( room only ) <br> €78.01 (room + breakfast)</h4>
+
+                            <div class="room-buttons">
+                                <button class="yellow-btn" onclick="bookHotel(1)">Book</button>
+                            </div>
+
+                        </div>   
+                    
+                    </div>
+
+                    <div class="room-card">
+
+                        <div class="room-photo"><img src="../../images/france/B&B_HOTEL/B&B_family_room.png"></div>
+
+                        <div class="room-text">
+                            <h3>Family Room</h3>
+                            <p>1 big + 2 single</p>
+                            <p>Max 4 guests</p>
+                            <h4>Adult: €54.01 ( room only ) <br> €74.01 (room + breakfast)</h4>
+                            <h4>Adult and child: €54.01 ( room only ) <br> €78.01 (room + breakfast)</h4>
+
+                            <div class="room-buttons">
+                                <button class="yellow-btn" onclick="bookHotel(1)">Book</button>
+                            </div>
+
+                        </div>   
+                    
+                    </div>
+
+                </div>  
+
+            </div>
+
+
+    
+            <div class="offers-rules">
+
+                <div class="offers-box">
+                    <h2>Facilities</h2>
+
+                    <div class="offer-grid">
+                        <div class="offer">Wi-Fi</div>
+                        <div class="offer">AC</div>
+                        <div class="offer">Parking</div>
+                        <div class="offer">No smoking</div>
+                    </div>
+                </div>
+
+
+                <div class="rules-box">
+                    <h2>Hotel Rules</h2>
+
+                    <div class="rule">No smoking</div>
+                    <div class="rule">Pets allowed</div>
+                    <div class="rule">Check-in 14:00</div>
+                </div>
+
+            </div>
+
+
+    
+
+        </div>
+
+        <footer id="footer">
+            <div class="footer-container">
+
+            
+                <div class="footer-left">
+                    <a href="../../pages/template.html">Home</a>
+                    <a href="../../pages/compare.html">Compare</a>
+                    <a href="../../pages/favourite.html">Favourite</a>
+                    <a href="../../pages/account.html">Account</a>
+                </div>
+
+                
+                <div class="footer-center">
+                    <h1>EuroStay</h1>
+                </div>
+
+        
+                <div class="footer-right">
+                    <div class="icons">
+                        <a href="#"><img src="../../images/instagram.png" alt="Instagram" class="icon"></a>
+                        <a href="#"><img src="../../images/whatsapp.png" alt="Whatsapp" class="icon"></a>
+                    </div>
+                    <p>email.com</p>
+                    <p>+60</p>
+                </div>
+
+            </div>
+        </footer>
+        
+        <script src="../../js/eurostay.js"></script>
+
+    </body>
+</html>
